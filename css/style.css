@@ -1,0 +1,194 @@
+/*
+ ทำโดย ©Trainii 2022 Coffee Web
+ จัดทำเมื่ออยากทำ ตอนนี้โครตขก Hereๆๆ
+*/
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Kanit', sans-serif;*/
+
+html {
+    --scrollbarBG: #C0ADA0;
+    --thumbBG: #7E6D63;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar {
+    width: 0.8rem;
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+::selection {
+    color: var(--thumbBG) ;
+    background: var(--scrollbarBG);
+}
+.font-en{
+    font-family: 'Poppins', sans-serif;
+}
+.font-th{
+    font-family: 'Kanit', sans-serif;
+}
+.text-whitesp{
+    color: #DEDEDE!important;
+}
+.bg-brown{
+    background-color: #7E6D63;
+}
+.bg-egg{
+    background-color: #C0ADA0;
+}
+.bg-whitesp{
+    background-color: #C4C4C4 !important;
+}
+.bg-cardsp{
+    background-color: #C4C4C4 !important;
+}
+.bg-img{
+    background-image: url(/img/hero_pic.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/*.bg-re{
+    position: relative;
+}
+.bg-abs{
+    position: absolute;
+    top:-50%;
+    left:50%;
+    transform: translate(-50%,50%);
+}*/
+.bg-text{
+    letter-spacing: 0.25rem;
+}
+.bg-sub-text{
+    letter-spacing: 0.1rem;
+}
+.btn-brown{
+    background-color: #7E6D63!important;
+    border-color: #7E6D63!important;
+    transition: all 0.5s ease-in-out;
+}
+.btn-brown:hover{
+    background-color: transparent !important;
+    border-color: #7E6D63!important;
+    color: black !important;
+    transition: all 0.5s ease-in-out;
+}
+.btn-egg{
+    background-color: #C0ADA0!important;
+    border-color: #C0ADA0!important;
+    transition: all 0.5s ease-in-out;
+}
+.btn-egg:hover{
+    background-color: transparent !important;
+    border-color: #C0ADA0!important;
+    transition: all 0.3s ease-in-out;
+}
+.icon-rotate{
+    transform: rotate(0deg) !important;
+    transition: all 0.3s ease !important;
+}
+.icon-rotate:hover{
+    transform: rotate(225deg) !important;
+}
+.icon-navbar-rotate{
+    transform: rotate(0deg) !important;
+    transition: all 0.3s ease !important;
+}
+.icon-navbar-rotate:hover{
+    transform: rotate(180deg) !important;
+    transition: all 0.3s ease !important;
+}
+.img-about-efopacity{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.img-about-efopacity:hover{
+    opacity: 0.8;
+}
+.card-fix{
+    border: 0 !important;
+}
+.card-zoom{
+    filter: drop-shadow(0 0 0);
+    transform: scale(1, 1);
+    transition: all 0.3s ease-in-out;
+}
+.card-zoom:hover{
+    filter: drop-shadow(8px 8px 8px);
+    transform: scale(1.1, 1.1);
+}
+.accordion-button:not(.collapsed) {
+    color: #212529 !important;
+    background-color: #212529;
+    box-shadow:inset 0 0 0 0.25rem rgb(101 105 98 / 45%) !important;
+    outline: 0;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/img/d.svg) !important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #c4c4c4 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(101 105 98 / 45%) !important;
+}
+.accordion-bgtext{
+    background-color: rgb(228 228 228) !important;
+}
+.row-fix-width{
+    max-width: 650px !important;
+    margin: auto !important;
+}
+.form-control{
+    background-color: #C4C4C4 !important;
+    border-radius: 1rem !important;
+}
+textarea {
+    resize: none !important;
+}
+i{
+    cursor: pointer;
+}
+.fa-facebook{
+    transition: all 0.3s ease-out;
+}
+.fa-facebook:hover{
+    color: #1778F2;
+}
+.fa-twitter{
+    transition: all 0.3s ease-out;
+}
+.fa-twitter:hover{
+    color: #1D9BF0;
+}
+.fa-instagram{
+    transition: all 0.3s ease-out;
+}
+.fa-instagram:hover{
+    color: transparent;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa-youtube{
+    transition: all 0.3s ease-out;
+}
+.fa-youtube:hover{
+    color: 	#FF0000;
+}
